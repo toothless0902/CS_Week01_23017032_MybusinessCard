@@ -1,3 +1,5 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -14,7 +16,9 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Random rand = new Random();
+            this.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+        
         }
 
         private void label2_Click(object sender, EventArgs e)
